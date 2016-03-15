@@ -17,7 +17,7 @@ Running `grunt test` will run the unit tests with karma.
 3. [http://learn.mean.io/#mean-io-hosting-mean-openshift](http://learn.mean.io/#mean-io-hosting-mean-openshift)
 
 ##Bootstrap
-####After checking out:
+####After checking out, get into client folder and perform below tasks:
 1. **npm install**
 2. **bower install**
 3. **grunt**
