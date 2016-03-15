@@ -1,0 +1,27 @@
+<div>
+	<h2>View-1</h2>
+	Name: <input type="text" ng-model="filter.text" /> {{filter.text}}
+</div>
+<ul>
+	<li ng-repeat="detail in details | filter:filter.text | orderBy:'name'">
+		{{detail.name | uppercase}} lives in {{detail.city|uppercase}}, sal:
+		{{detail.salary | currency}}</li>
+</ul>
+
+<br />
+<table>
+	<tr>
+		<td>Customer Name:</td>
+		<td><input type="text" ng-model="newCustomer.name" /></td>
+	</tr>
+	<tr>
+		<td>Customer City:</td>
+		<td><input type="text" ng-model="newCustomer.city" /></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><button ng-click="addCustomer()">Add
+				Customer</button></td>
+
+	</tr>
+</table>
+</div>
